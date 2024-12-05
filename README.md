@@ -1,35 +1,23 @@
-# Distorted underwater image reconstruction
-Pytorch implementation of the paper "Distorted underwater image reconstruction for an autonomous underwater vehicle based on a self-attention generative adversarial network"
+# Linear Discontinuity Recognition
+YoloV8 implementation of the paper "Recognition of linear discontinuities on high-steep slope outcrops for typical hard rock masses in China based on high-precision UAV images trained by a deep learning model"
 
-Our network takes a distorted underwater image as an input and procude the corresponding sharp estimate. The model we use is GAN framework with group normalization + attention mechanism + RaLSGAN based on the conv3_3 layer before activation in the pre-trained VGG-16. Such architecture also gives good results on other image-to-image translation problems (deblurring, colorization, super resolution, inpainting, dehazing etc.)
+Our network takes a distorted underwater image as an input and procude the corresponding sharp estimate. The model we use is YoloV8 framework.
 
-# How to run
-python 2.7
-NVIDIA GPU + CUDA CuDNN (CPU untested, feedback appreciated)
-Pytorch
-
-To test the pretrained model, run: python main.py --test --exp-name both_L1VGGAdv3_3before_reluAteRa_gn2
 
 # Datasets
-The datasets are from http://www.image-net.org/ and http://cseweb.ucsd.edu/~viscomp/projects/WACV18Water/. 
+The datasets we have uploaded to Baidu Net, here is the website link and the extract code.
+Website link:
+Extract code:
+For visiting the Baidu Net on a windows computer, one can access the following website: https://www.baidu.com/link?url=Vc9deB4dvzPYiItTBh7xriHpna2RuYUMfEYfjZ7o03y&wd=&eqid=fdf7d5180472f68f0000000667511c70
+
 
 # Citation
 If you find our code helpful in your research or work please cite the paper.
 
-@article{2020Distorted,
+@article{2024Recognition,
   title = {Distorted underwater image reconstruction for an autonomous underwater vehicle based on a self-attention generative adversarial network},
-  author = {Tengyue Li, Qianqian Yang, Shenghui Rong, Long Chen, and Bo He},
-  journal = {Applied Optics},
-  eprint = {Vol.59, No.31},
-  year = 2020
+  author = {Wen Zhang, Guanglu Xu, Tengyue Li*, Shuonan Wang, and Danyang Wu},
+  journal = {},
+  eprint = {},
+  year = 
 }
-
-@inproceedings{2018Learning,
-  title={Learning to See Through Turbulent Water},
-  author={Zhengqin Li，Zak Murez，David Kriegman，Ravi Ramamoorthi，Manmohan Chandraker},
-  booktitle={IEEE Winter Conference on Applications of Computer Vision},
-  year={2018},
-}
-
-# Acknowledgments
-The code borrows heavily from  "Learning to See through Turbulent Water" WACV 2018. The authors thank Dr. Zak Murez for constructive discussions.
