@@ -15,7 +15,7 @@ For visiting the Baidu Net on a windows computer, one can access the following w
 If you find our code helpful in your research or work please cite the paper.
 
 @article{2024Recognition,
-  title = {Distorted underwater image reconstruction for an autonomous underwater vehicle based on a self-attention generative adversarial network},
+  title = {Recognition of linear discontinuities on high-steep slope outcrops for typical hard rock masses in China based on high-precision UAV images trained by a deep learning model},
   author = {Wen Zhang, Guanglu Xu, Tengyue Li*, Shuonan Wang, and Danyang Wu},
   journal = {},
   eprint = {},
